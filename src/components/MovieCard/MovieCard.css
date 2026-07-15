@@ -1,0 +1,25 @@
+.movie-card {
+    width: 220px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.rating {
+    background: #1c1c1c;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.movie-card h3 {
+    margin-top: 12px;
+}
+
+.movie-card p {
+    color: gray;
+}

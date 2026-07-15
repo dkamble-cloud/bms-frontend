@@ -1,0 +1,21 @@
+.recommended {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.recommended-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recommended-header span {
+    color: red;
+    cursor: pointer;
+}
+
+.movies-container {
+    display: flex;
+    gap: 25px;
+}
