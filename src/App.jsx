@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -11,7 +11,6 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -20,7 +19,7 @@ function App() {
 
       <Routes>
 
-        <Route path="/home" element={<RecommendedMovies />} />
+        <Route path="/" element={<RecommendedMovies />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 

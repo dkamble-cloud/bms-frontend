@@ -1,7 +1,12 @@
 import { useState } from "react";
 import "./Register.css";
+import { registerUser } from "../api/authApi";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -17,7 +22,7 @@ function Register() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (formData.password !== formData.confirmPassword) {
@@ -25,10 +30,40 @@ function Register() {
       return;
     }
 
-    console.log(formData);
+    const names = formData.fullName.trim().split(" ");
 
-    // TODO:
-    // Call Spring Boot Register API
+    const request = {
+      firstName: names[0],
+      lastName: names.slice(1).join(" "),
+      email: formData.email,
+      password: formData.password,
+    };
+
+    try {
+
+      const response = await registerUser(request);
+
+      const message = await response.text();
+
+      if (response.ok) {
+
+        alert(message);
+
+        navigate("/login");
+
+      } else {
+
+        alert(message);
+
+      }
+
+    } catch (error) {
+
+      console.error(error);
+
+      alert("Unable to connect to the server.");
+
+    }
   };
 
   return (
