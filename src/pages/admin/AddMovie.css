@@ -1,0 +1,67 @@
+.add-movie-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-movie-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.add-movie-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-movie-container label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.add-movie-container input,
+.add-movie-container textarea,
+.add-movie-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.add-movie-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.add-movie-container input:focus,
+.add-movie-container textarea:focus,
+.add-movie-container select:focus {
+    border-color: #d81f26;
+    box-shadow: 0 0 5px rgba(216, 31, 38, 0.3);
+}
+
+.add-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #d81f26;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #b5161d;
+}

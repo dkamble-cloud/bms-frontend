@@ -1,0 +1,67 @@
+.edit-movie-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-movie-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.edit-movie-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-movie-container label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.edit-movie-container input,
+.edit-movie-container textarea,
+.edit-movie-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.edit-movie-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.edit-movie-container input:focus,
+.edit-movie-container textarea:focus,
+.edit-movie-container select:focus {
+    border-color: #d81f26;
+    box-shadow: 0 0 5px rgba(216, 31, 38, 0.3);
+}
+
+.update-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #d81f26;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+    background-color: #b5161d;
+}
